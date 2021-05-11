@@ -24,10 +24,25 @@ class _CityScreenState extends State<CityScreen> {
               Align(
                 alignment: Alignment.topLeft,
                 child: FlatButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pop(context);
+                  },
                   child: Icon(
                     Icons.arrow_back_ios,
                     size: 50.0,
+                  ),
+                ),
+              ),
+              Container(
+                padding: EdgeInsets.all(20.0),
+                child: TextField(
+                  decoration: InputDecoration(
+                    hintText: 'Enter City',
+                    hintStyle: TextStyle(color: Colors.grey),
+                    filled: true,
+                    fillColor: Colors.white,
+                      icon: Icon(Icons.location_city,
+                      color: Colors.white,),
                   ),
                 ),
               ),
