@@ -36,14 +36,13 @@ class _CityScreenState extends State<CityScreen> {
               Container(
                 padding: EdgeInsets.all(20.0),
                 child: TextField(
-                  decoration: InputDecoration(
-                    hintText: 'Enter City',
-                    hintStyle: TextStyle(color: Colors.grey),
-                    filled: true,
-                    fillColor: Colors.white,
-                      icon: Icon(Icons.location_city,
-                      color: Colors.white,),
+                  style: TextStyle(
+                    color: Colors.black,
                   ),
+                  decoration: kTextFieldDecoration,
+                  onChanged: (value){
+                    print(value);
+                  },
                 ),
               ),
               Container(
